@@ -104,43 +104,4 @@ TEST_CASE("Test 4 -  Game class")
     CHECK(p1.cardesTaken() == 0);
     CHECK(p1.stacksize() == 0);
 
-    // SUBCASE("ends by equal"){
-    //     Player p1("Alice");
-    //     Player p2("Bob");
-    //     Game g(p1, p2);
-
-    //     CHECK(g.printWiner() == "No one");
-
-    //     g.playAll();
-
-    //     Player w("Winner");
-    //     Player l("Loser");
-
-    //     if(p1.stacksize() == 0) {
-    //         w = p2;
-    //         l = p1;
-    //     } else {
-    //         w = p1;
-    //         l = p2;
-    //     }
-
-    //     w.addCardtoStart(Card(1, "Clubs"));
-    //     w.addCardtoStart(Card(10, "Hearts"));
-    //     w.addCardtoStart(Card(5, "Hearts"));
-
-    //     l.addCardtoStart(Card(1, "Hearts"));
-    //     l.addCardtoStart(Card(12, "Hearts"));
-    //     l.addCardtoStart(Card(5, "Diamonds"));
-
-    //     g.playTurn();
-
-    //     string s = g.printLastTurn();
-
-    //     CHECK(s == "Alice played 5 of Hearts Bob played 5 of Diamonds. Draw. Alice played 1 of Clubs Bob played 1 of Hearts. Draw.");
-
-    //     CHECK(l.stacksize() == 3);
-    //     CHECK(w.stacksize() == 49);
-
-    //     g.playAll();
-    //     CHECK_THROWS(g.playTurn());
 }
